@@ -4,7 +4,7 @@ import './single.scss'
 const Single = () => {
   return (
     <div>
-      
+      single page
     </div>
   )
 }
