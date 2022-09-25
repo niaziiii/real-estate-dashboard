@@ -1,0 +1,85 @@
+.navbar {
+    padding: 10px 20px;
+    box-shadow: 1px .5px 3px rgb(129, 127, 127);
+    ;
+    display: flex;
+    justify-content: space-between;
+
+    &__search {
+        display: flex;
+
+        form {
+            display: flex;
+            align-items: center;
+            border: 1px solid #1480bd;
+            border-radius: 20px;
+            padding: 0 .5rem;
+            overflow: hidden;
+
+            svg {
+                color: #1480bd;
+                cursor: pointer;
+            }
+
+            input {
+                border: none;
+                padding: .2rem 0;
+                background-color: transparent;
+                max-width: 500px;
+                min-width: 100px;
+                width: 500px;
+
+                &:hover,
+                &:active,
+                &:visited,
+                &:focus {
+                    outline: none;
+                    border: none;
+
+                }
+            }
+        }
+    }
+
+    &__icons {
+        display: flex;
+        align-items: center;
+
+        h3 {
+            display: flex;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+            margin-right: 20px;
+
+            b {
+                margin-left: .5rem;
+            }
+
+            span {
+                position: absolute;
+                top: -5px;
+                right: -5px;
+                background-color: red;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                p {
+                    font-size: .8rem;
+                }
+            }
+
+            &:nth-last-of-type(1) {
+                margin-right: 0px;
+            }
+        }
+
+        svg {
+            color: #1480bd;
+        }
+    }
+}
