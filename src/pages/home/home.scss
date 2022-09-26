@@ -3,5 +3,12 @@
 
     &__container{
         flex: 6;
+        &__widgets{
+            padding: 10px;
+            display: flex;
+            gap: 20px;
+
+        }
     }
+
 }

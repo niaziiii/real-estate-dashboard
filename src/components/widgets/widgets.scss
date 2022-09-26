@@ -1,0 +1,60 @@
+.widgets {
+    width: 100%;
+    flex: 1;
+    box-shadow: 1px 2px 5px rgb(129, 127, 127);
+    padding: 10px;
+    border-radius: 5px;
+
+    &__users {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        span {
+            display: flex;
+            align-items: center;
+        }
+
+        &:nth-of-type(1) {
+            span {
+                color: #1480bd;
+                display: flex;
+                align-items: center;
+            }
+
+            h5 {
+                font-size: 1rem;
+                color: rgb(165, 156, 156);
+            }
+        }
+
+        &:nth-of-type(2) {
+            h5 {
+                font-weight: 300;
+                padding-bottom: .1rem;
+                border-bottom: 2px solid rgb(214, 206, 206);
+            }
+
+            span {
+                color: #1480bd;
+
+                i {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 4px;
+                    padding: .2rem;
+                    max-width: 2rem;
+                    max-height: 2rem;
+                }
+            }
+        }
+    }
+
+    h1 {
+        padding: 15px 0;
+        font-size: 3rem;
+        font-weight: 500;
+    }
+}
