@@ -1,6 +1,6 @@
 import React from 'react'
 import './home.scss'
-import {Navbar,Sidebar,Widgets} from '../../components/components'
+import {Navbar,Sidebar,Widgets,Progressbar,Chart} from '../../components/components'
 
 const Home = () => {
   return (
@@ -13,7 +13,16 @@ const Home = () => {
           <Widgets type={'saleProperties'}/>
           <Widgets type={'viewRequests'}/>
         </div>
+        <div className="home__container__progess-chart">
+        <div className="home__container__progess-chart__progress">
+          <Progressbar/>
+        </div>
+        <div className="home__container__progess-chart__chart">
+          <Chart/>
+        </div>
       </div>
+      </div>
+  
     </div>
   )
 }
