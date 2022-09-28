@@ -1,0 +1,326 @@
+.single-page {
+    display: flex;
+
+    &__container {
+        flex: 6;
+
+        &__property {
+            box-shadow: 1px 2px 5px rgb(129, 127, 127);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+    }
+}
+
+
+.app__productOverview {
+    display: flex;
+    // background-color: firebrick;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.app__productOverview__header {
+    width: 100%;
+
+    &__image {
+        width: 100%;
+        background-color: black;
+
+        img {
+            min-width: 100%;
+            height: 10rem;
+            object-fit: cover;
+            opacity: .7;
+        }
+    }
+}
+
+.app__productOverview__content {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 2rem;
+
+    &__left {
+        flex: 0 0 65%;
+        margin-right: 5%;
+        overflow: hidden;
+    }
+
+    &__right {
+        flex: 1;
+        // background-color: red;
+    }
+}
+
+
+.app__productOverview__content__left__heading {
+    padding: 3rem 0;
+
+    &__types {
+        display: flex;
+        flex-direction: row;
+
+        h3 {
+            margin-right: .5rem;
+            background-color: #1480bd;
+            padding: .5rem 1rem;
+            color: white;
+
+            &:nth-of-type(3) {
+                background-color: rgb(163, 45, 45);
+            }
+        }
+    }
+
+    h2 {
+        margin: 1rem 0;
+    }
+
+    span {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        svg {
+            font-size: 1.55rem;
+            margin-right: .9rem;
+            color: rgb(163, 45, 45);
+        }
+    }
+
+    .description {
+        font-size: 1.14rem;
+        line-height: 1.75rem;
+        color: gray;
+    }
+
+    &__icons {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        margin-top: 1rem;
+        padding: 1rem 0;
+        border-top: 2px solid rgb(187, 186, 186);
+
+        span {
+            margin-right: 5rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            svg {
+                font-size: 2rem;
+                color: #1480bd;
+            }
+
+            h3 {
+                margin-left: .3rem;
+
+                p {
+                    font-weight: 100;
+                    color: gray;
+                }
+            }
+        }
+    }
+}
+
+.app__productOverview__content__right__agent {
+    margin-top: 2.5rem;
+    // background-color: rebeccapurple;
+    box-shadow: 0 0 3px black;
+    padding: .5rem;
+
+    h2 {
+        color: grey;
+        margin-top: .4rem;
+    }
+
+    div {
+        display: flex;
+        flex-direction: row;
+        // justify-content: space-between;
+        margin-top: 1rem;
+        flex-wrap: wrap;
+
+        a {
+            &:nth-of-type(2) span {
+                background-color: #1480bd;
+            }
+
+            &:nth-of-type(3) span {
+                background-color: rgb(82, 224, 82);
+            }
+        }
+
+        span {
+            background-color: rgb(163, 45, 45);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: .2rem .4rem;
+            margin-right: .5rem;
+            color: white;
+            margin-bottom: .5rem;
+
+            svg {
+                margin-right: .3rem;
+            }
+        }
+    }
+
+    span {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        p {
+            margin-right: .5rem;
+        }
+    }
+
+}
+
+.app__productOverview__content__right__amenities {
+    display: block;
+    margin-top: 1rem;
+    padding: 1rem 0;
+
+    span {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 1rem;
+        margin-left: 2rem;
+
+        svg {
+            font-size: 1.24rem;
+        }
+
+        p {
+            font-size: 1rem;
+            color: gray;
+        }
+    }
+}
+
+
+
+.overview-slider {
+    text-align: center;
+    margin-bottom: 3rem;
+    background-color: #1480bd;
+    width: 100%;
+    max-width: 40rem;
+    min-width: 10rem;
+    padding: 1.5rem 2rem;
+    overflow: hidden !important;
+
+    &__container {
+        width: 10rem;
+        overflow: hidden !important;
+
+        img {
+            width: 100%;
+            height: 15rem;
+            object-fit: cover;
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width:950px) {
+
+    .overview-slider {
+        &__container {
+            img {
+                height: 18rem;
+            }
+        }
+    }
+
+    .app__productOverview__content {
+        flex-direction: column;
+    }
+
+    .app__productOverview__content__left {
+        margin-right: 0%;
+    }
+
+    .app__productOverview__content__right__amenities {
+        padding: 3rem 0;
+
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    .app__productOverview__content__right__agent {
+        width: 25rem;
+    }
+
+    .app__productOverview__content__left__heading {
+        padding: 1rem 0;
+
+        &__icons {
+            width: 80%;
+            margin: 2rem auto;
+            justify-content: space-between;
+
+            span {
+                margin-right: 0%;
+                justify-content: space-between;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .app__productOverview__products {
+        grid-template-columns: 1fr
+    }
+}
+
+
+@media screen and (max-width:600px) {
+
+
+    .app__productOverview__content__left__heading {
+        &__types {
+            flex-wrap: wrap;
+
+            h3 {
+                margin-bottom: .5rem;
+            }
+        }
+
+        &__icons {
+            width: 100%;
+            flex-wrap: wrap;
+
+            span {
+                margin-right: .5rem;
+                margin-bottom: .6rem;
+            }
+        }
+    }
+
+    .app__productOverview__content__right__agent {
+        width: 100%;
+        min-width: 100%;
+    }
+}
