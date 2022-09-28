@@ -1,0 +1,26 @@
+.table-lists{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px rgb(129, 127, 127);
+    overflow: hidden;
+    width: 100%;
+    &__heading{
+        margin-bottom: 1rem;
+        h5 {
+            font-size: 1rem;
+            color: rgb(165, 156, 156);
+        }
+    }
+    &__tableHeader{
+        background-color: #1480bd;
+        color: white;
+        th{color: white; font-weight: 800;}
+    }
+
+    &__tablerow{
+        td button{background-color: red; font-weight: 800; width: 8rem; color: white;}
+        &:hover{
+            background-color: rgb(228, 223, 223);
+        }
+    }
+}
