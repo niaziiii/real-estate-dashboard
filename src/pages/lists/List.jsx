@@ -1,10 +1,20 @@
 import React from 'react'
+import { Navbar, Sidebar } from '../../components/components'
 import './list.scss'
+import PropertyTable from './tables/PropertyTable';
+import ViewTable from './tables/ViewTable';
 
-const List = () => {
+
+const List = ({ type }) => {
   return (
-    <div>
-      list
+    <div className='list'>
+      <Sidebar />
+      <div className="list__container">
+        <Navbar />
+        <div className="list__container__items">
+          {type === 'property' ? <PropertyTable /> : <ViewTable />}
+        </div>
+      </div>
     </div>
   )
 }

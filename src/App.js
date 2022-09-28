@@ -8,9 +8,10 @@ function App() {
         <Route path="/">
           <Route index element={<Home />} />
           <Route path="login" element={<Login />} />
+          <Route path="requests" element={<List type={'product'}/>} />
 
-          <Route path="products">
-            <Route index element={<List />} />
+          <Route path="property">
+            <Route index element={<List type={'property'} />} />
             <Route path=":userId" element={<Single />} />
             <Route path="new" element={<New />} />
           </Route>
