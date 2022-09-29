@@ -2,9 +2,11 @@ import React from 'react'
 import './sidebar.scss'
 import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
 import DomainAddIcon from '@mui/icons-material/DomainAdd';
-import Person2Icon from '@mui/icons-material/Person2';
+import { GoGitPullRequest } from 'react-icons/go';
 import SettingsIcon from '@mui/icons-material/Settings';
 import LogoutIcon from '@mui/icons-material/Logout';
+import { Link } from 'react-router-dom'
+
 const Sidebar = () => {
   return (
     <div className='sidebar'>
@@ -16,34 +18,42 @@ const Sidebar = () => {
       <div className="sidebar__main">
         <p className='title'>Main</p>
         <li className="links">
-          <span >
-            <AdminPanelSettingsIcon />
-            <p>Dashboard </p>
-          </span>
+          <Link to='/'>
+            <span >
+              <AdminPanelSettingsIcon />
+              <p>Dashboard </p>
+            </span>
+          </Link>
         </li>
 
         <p className='title'>Lists</p>
         <li className="links">
-          <span >
-            <Person2Icon />
-            <p>Users </p>
-          </span>
+          <Link to='/requests'>
+            <span >
+              <GoGitPullRequest />
+              <p>Requests </p>
+            </span>
+          </Link>
         </li>
 
         <li className="links">
-          <span >
-            <DomainAddIcon />
-            <p>Properties </p>
-          </span>
+          <Link to='/property'>
+            <span >
+              <DomainAddIcon />
+              <p>Properties </p>
+            </span>
+          </Link>
         </li>
 
 
         <p className='title'>Setting</p>
         <li className="links">
-          <span >
-            <SettingsIcon />
-            <p>Profile </p>
-          </span>
+          <Link to='/profile'>
+            <span >
+              <SettingsIcon />
+              <p>Profile </p>
+            </span>
+          </Link>
         </li>
 
 
