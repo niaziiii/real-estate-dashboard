@@ -2,17 +2,22 @@
     width: auto;
     flex: 1;
     border-right: 0.5px solid rgb(228, 223, 223);
+    border-bottom: 0.5px solid rgb(228, 223, 223);
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    max-height: 100vh;
+    height: 100vh;
 
     &__top {
-        padding: 10px 0;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         h2 {
             text-align: center;
-            padding: 10px 0;
             color: #1480bd;
+            font-size: 1rem;
         }
 
         border-bottom: 0.5px solid rgb(228, 223, 223);
