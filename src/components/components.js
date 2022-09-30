@@ -5,6 +5,8 @@ import Chart from './chart/Chart'
 import Progressbar from './progressbar/Progressbar'
 import TableList from './tableLists/TableLists'
 import PropertyOverview from './propertyOverview/PropertyOverview'
+import AddProperty from './addProperty/AddProperty'
+
 export {
     Navbar,
     Sidebar,
@@ -12,6 +14,6 @@ export {
     Chart,
     Progressbar,
     TableList,
-    PropertyOverview
-
+    PropertyOverview,
+    AddProperty,
 }
