@@ -1,9 +1,15 @@
 import { Routes, Route } from "react-router-dom";
 import { Home, Login, New, Single, List } from "./pages/pages";
+import './style.scss'
+import {AppContexts} from './contexts/AppContext'
+import { useState } from "react";
 
 function App() {
+  const [background,setBackground]= useState(false);
+  const [name] = useState('alo')
   return (
-    <div className="app">
+    <div className={background? 'app-dark' : "app"}>
+      <AppContexts.Provider value={{setBackground,name}}>
       <Routes>
         <Route path="/">
           <Route index element={<Home />} />
@@ -18,6 +24,7 @@ function App() {
 
         </Route>
       </Routes>
+      </AppContexts.Provider>
     </div>
   );
 
