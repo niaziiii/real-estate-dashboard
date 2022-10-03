@@ -1,20 +1,24 @@
+body{
+    scroll-behavior: smooth;
+}
 .app-dark{
-    background-color: rgb(20, 20, 20);
+    background-color: #251B37;
     color: grey;
     a{
         color: grey;
     }
     .css-1e2bxag-MuiDataGrid-root,
     .css-11xur9t-MuiPaper-root-MuiTableContainer-root{
-        background-color: rgb(20, 20, 20);
+        background-color: transparent;
         color: grey;
         tr{
             border-bottom: 1px solid gray;
             td{
                 color: gray;
             }
+
             .progress-bar{background-color: transparent;}
-            .css-1ex1afd-MuiTableCell-root,.css-177gid-MuiTableCell-root{border: none;}
+            .css-1yhpg23-MuiTableCell-root,.css-1ex1afd-MuiTableCell-root,.css-177gid-MuiTableCell-root{border: none;}
         }
         
     }
@@ -40,3 +44,22 @@
         background-color: transparent;
     }
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #1480bd; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

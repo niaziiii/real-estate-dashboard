@@ -1,9 +1,10 @@
 .single-page {
     display: flex;
-
+    height: 100vh;
+    overflow: hidden;
     &__container {
         flex: 6;
-
+        overflow-y: auto;
         &__property {
             box-shadow: 1px 2px 5px rgb(129, 127, 127);
             padding: 10px;

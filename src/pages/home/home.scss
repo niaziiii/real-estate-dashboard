@@ -1,7 +1,10 @@
 .home{
     display: flex;
+    height: 100vh;
+    overflow: hidden;
     &__container{
         flex: 6;
+        overflow-y: scroll;
         &__widgets{
             padding: 20px 10px;
             display: flex;

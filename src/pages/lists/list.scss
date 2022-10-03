@@ -1,9 +1,10 @@
 .list {
     display: flex;
-
+    height: 100vh;
+    overflow: hidden;
     &__container {
         flex: 6;
-
+        overflow-y: auto;
         &__items {
             padding: 20px;
             margin: 20px;
