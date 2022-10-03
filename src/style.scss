@@ -1,0 +1,42 @@
+.app-dark{
+    background-color: rgb(20, 20, 20);
+    color: grey;
+    a{
+        color: grey;
+    }
+    .css-1e2bxag-MuiDataGrid-root,
+    .css-11xur9t-MuiPaper-root-MuiTableContainer-root{
+        background-color: rgb(20, 20, 20);
+        color: grey;
+        tr{
+            border-bottom: 1px solid gray;
+            td{
+                color: gray;
+            }
+            .progress-bar{background-color: transparent;}
+            .css-1ex1afd-MuiTableCell-root,.css-177gid-MuiTableCell-root{border: none;}
+        }
+        
+    }
+
+    .sidebar{
+        border-color: gray !important;
+        .sidebar__top{
+            border-color: inherit;
+        }
+
+    }
+    .progress-bar{
+        background-color: transparent;
+    }
+    .app__productOverview__content__left__heading__icons{
+        background-color: transparent;
+    }
+    .app__productOverview__content__right__agent{
+     box-shadow: 0 0 3px grey !important;   
+    }
+    input,select,option{
+        color: gray;
+        background-color: transparent;
+    }
+}
