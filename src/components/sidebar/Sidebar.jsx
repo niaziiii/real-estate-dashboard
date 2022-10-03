@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './sidebar.scss'
 import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
 import DomainAddIcon from '@mui/icons-material/DomainAdd';
@@ -6,8 +6,11 @@ import { GoGitPullRequest } from 'react-icons/go';
 import SettingsIcon from '@mui/icons-material/Settings';
 import LogoutIcon from '@mui/icons-material/Logout';
 import { Link } from 'react-router-dom'
+import { AppContexts } from '../../contexts/AppContext';
 
 const Sidebar = () => {
+  const { setBackground } = useContext(AppContexts);
+
   return (
     <div className='sidebar'>
 
@@ -62,8 +65,9 @@ const Sidebar = () => {
       <div className="sidebar__bottom">
         <p className='title'>mode</p>
         <div className="changeColors">
-          <div></div>
-          <div></div>
+          <div onClick={()=> setBackground(true)}></div>
+
+          <div onClick={() => setBackground(false)}></div>
         </div>
         <li className="links">
           <span >
