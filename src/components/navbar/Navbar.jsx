@@ -1,10 +1,13 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import './navbar.scss'
 import SearchIcon from '@mui/icons-material/Search';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import NotificationsIcon from '@mui/icons-material/Notifications';
+import { AppContexts } from '../../contexts/AppContext';
+
 
 const Navbar = () => {
+  const {user} = useContext(AppContexts)
   return (
     <div className='navbar'>
       <div className="navbar__search">
@@ -22,7 +25,7 @@ const Navbar = () => {
 
         <h3>
           <AccountCircleIcon />
-          <b>Zafar Ali</b>
+          <b>{user.name}</b>
         </h3>
       </div>
     </div>
